@@ -1,0 +1,259 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("back.jpg");
+        background-size: cover;
+      }
+
+      #contact-form-container {
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+      }
+
+      #contact-form-container h2 {
+        color: #333;
+      }
+
+      #contact-form-container input,
+      #contact-form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      #contact-form-container button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #contact-form-container button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contact-form-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea
+          id="message"
+          placeholder="Message"
+          rows="4"
+          required
+        ></textarea>
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // You would typically send this data to a server-side script using AJAX
+        // and the server-side script would handle sending the email.
+        // This is just a client-side example.
+
+        // For demonstration purposes, let's just display the entered information
+        alert("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+      }
+    </script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("back.jpg");
+        background-size: cover;
+      }
+      .typed {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 0;
+        color: white;
+        font-size: 55px;
+        margin-left: 50px;
+        margin-top: 500px;
+        /* font-weight:; */
+        font-family: monospace;
+        animation: typing 4s infinite;
+        /* letter-spacing: 6px; */
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+          border-color: transparent;
+        }
+        100% {
+          width: 100%;
+          border-color: transparent;
+        }
+      }
+      .highlight {
+        color: orange;
+        display: inline-block;
+      }
+      .highlightw {
+        color: rgb(255, 255, 255);
+        display: inline-block;
+      }
+
+
+      .container {
+        font-family: "arial";
+        font-size: 24px;
+        display: grid;
+        place-items: center;
+        width: 350px;
+      }
+
+      #contact-form-container {
+        background-color: #000000;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        width: 350px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 60px;
+      }
+
+      #contact-form-container h2 {
+        color: #333;
+      }
+
+      #contact-form-container input,
+      #contact-form-container textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      #contact-form-container button {
+        background-color: orange;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 40%;
+        margin-top: 15px;
+      }
+
+      #contact-form-container button:hover {
+        background-color: white;
+      }
+
+      .highlight {
+        color: orange;
+        display: inline-block;
+      }
+      .highlightw {
+        color: rgb(255, 255, 255);
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="typed">
+        C
+        <span class="highlight">A</span>
+        R
+        <span class="highlight">H</span>
+        U
+        <span class="highlight">B</span>
+      </p>
+    </div>
+    <div id="contact-form-container">
+      <!-- <h2>Contact Us</h2> -->
+      <h2>
+        <span class="highlightw">C</span>
+        <span class="highlight">O</span>
+        <span class="highlightw">N</span>
+        <span class="highlight">T</span>
+        <span class="highlightw">A</span>
+        <span class="highlight">C</span>
+        <span class="highlightw">T</span>
+        <span>-</span>
+        <span class="highlight">U</span>
+        <span class="highlightw">S</span>
+      </h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Message" rows="4" required></textarea>
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // You would typically send this data to a server-side script using AJAX
+        // and the server-side script would handle sending the email.
+        // This is just a client-side example.
+
+        // For demonstration purposes, let's just display the entered information
+        alert("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("back.jpg");
+        background-size: cover;
+      }
+
+      #login-container {
+        background-color: #000000;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        width: 350px;
+        height: 250px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 60px;
+      }
+
+      #login-container h2 {
+        color: #333;
+      }
+
+      #login-container input {
+        width:80%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      #login-container button {
+        background-color: orange;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 40%;
+        margin-top: 15px;
+      }
+
+      #login-container button:hover {
+        background-color: WHITE;
+      }
+      /* button{
+        background-color: orange;
+       } */
+      .bn {
+        margin: 3px;
+        background-color: orange;
+      }
+      .container {
+        font-family: "arial";
+        font-size: 24px;
+        display: grid;
+        place-items: center;
+        width: 350px;
+      }
+      .links{
+        margin-top: 10px;
+      }
+      .typed {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 0;
+        color: white;
+        font-size: 55px;
+        margin-left: 50px;
+        margin-top: 500px;
+        /* font-weight:; */
+        font-family: monospace;
+        animation: typing 4s infinite;
+        /* letter-spacing: 6px; */
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+          border-color: transparent;
+        }
+        100% {
+          width: 100%;
+          border-color: transparent;
+        }
+      }
+      .highlight {
+        color: orange;
+        display: inline-block;
+      }
+      .highlightw {
+        color: rgb(255, 255, 255);
+        display: inline-block;
+      }
+
+      a {
+            color: rgb(143, 141, 141);
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="typed">
+        C
+        <span class="highlight">A</span>
+        R
+        <span class="highlight">H</span>
+        U
+        <span class="highlight">B</span>
+      </p>
+    </div>
+    <div id="login-container">
+      <h2>
+        <span class="highlight">L</span>
+        <span class="highlightw">O</span>
+        <span class="highlight">G</span>
+        <span class="highlightw">I</span>
+        <span class="highlight">N</span>
+      </h2>
+      <form id="login-form">
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
+          required
+        />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="button" class="bn" onclick="login()">Login</button><br />
+
+        <span class="links">
+            <a href="/signup" color="white">Register a New User </a>
+        </span>
+    </form>
+    </div>
+
+    <script>
+      function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username && password) {
+          alert("Login successful!");
+        } else {
+          alert("Please enter both username and password.");
+        }
+      }
+    </script>
+  </body>
+</html>
